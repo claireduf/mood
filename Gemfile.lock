@@ -1,6 +1,22 @@
+GIT
+  remote: https://github.com/applidium/clarke
+  revision: f5c22fc2f4fcbea073a93134719473906c9dc425
+  specs:
+    clarke (0.2.1)
+
+GIT
+  remote: https://github.com/applidium/clarke-messenger
+  revision: 32681fd5c7f1790e911ec4376e329cac17e54fb3
+  specs:
+    clarke-messenger (0.1.0)
+      clarke (~> 0.2.0)
+      http
+
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -10,11 +26,22 @@ GEM
       descendants_tracker (~> 0.0.1)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
+    domain_name (0.5.20180417)
+      unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
     faraday (0.15.0)
       multipart-post (>= 1.2, < 3)
     gruff (0.7.0)
       rmagick (~> 2.13, >= 2.13.4)
+    http (3.3.0)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.0)
+      http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (2.1.1)
+    http_parser.rb (0.6.0)
     ice_nine (0.11.2)
     inflecto (0.0.2)
     method_source (0.9.0)
@@ -24,6 +51,7 @@ GEM
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    public_suffix (3.0.3)
     rack (2.0.5)
     rack-protection (2.0.1)
       rack
@@ -41,6 +69,9 @@ GEM
       virtus
     thread_safe (0.3.6)
     tilt (2.0.8)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.5)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -51,6 +82,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  clarke!
+  clarke-messenger!
   gruff
   pg
   pry
@@ -60,4 +93,4 @@ DEPENDENCIES
   telegram-bot-ruby
 
 BUNDLED WITH
-   1.14.6
+   1.16.1
