@@ -10,6 +10,7 @@ module Mood
           primary_key :id
           DateTime :time
           Integer :value
+          String :messenger_id
         end
       end
 
