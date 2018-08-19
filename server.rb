@@ -1,7 +1,6 @@
 require "sinatra"
 require_relative "./database"
 require 'clarke'
-require 'clarke/platformlib'
 require 'clarke/messenger'
 
 Clarke::Messenger::Config.facebook_page_token = ENV['FACEBOOK_PAGE_TOKEN']
