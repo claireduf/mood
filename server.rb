@@ -4,7 +4,7 @@ require 'clarke'
 require 'clarke/platformlib'
 require 'clarke/messenger'
 
-Clarke::Messenger::Config.facebook_page_token = 'your_facebook_page_token'
+Clarke::Messenger::Config.facebook_page_token = ENV['FACEBOOK_PAGE_TOKEN']
 
 post '/messenger' do
   request_body = JSON.parse(request.body.read)
